@@ -4,6 +4,7 @@ import kivy
 kivy.require('1.8.0') # replace with your current kivy version !
 
 
+
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
@@ -25,7 +26,8 @@ class FormInput(GridLayout):
         self.artist = TextInput(multiline=False)
         self.add_widget(self.artist)
         self.but = Button(text='Add more rows', font_size=14)
-        self.but.bind(on_press=self.tester)
+        #
+        # self.but.bind(on_press=self.tester)
         self.add_widget(self.but)
         self.but2 = Button(text='Run', font_size=14)
         self.but2.bind(on_press=self.run_threads)
